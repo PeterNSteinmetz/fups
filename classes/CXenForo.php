@@ -125,6 +125,8 @@ class XenForoFUPS extends FUPSBase {
 		if ($this->dbg) $this->write_err('Deleting any "lúc " in time string "'.$ts_raw.'".');
 		$ts_new = preg_replace('/\\blúc /', '', $ts_raw);
 		if (!is_null($ts_new)) $ts_raw = $ts_new;
+		# JML added:
+		$ts_raw = str_replace(' at ', ' ', $ts_raw);
 	}
 
 	protected function find_author_posts_via_search_page__end_hook(&$do_inc_progress_level, $html, $found_earliest, $matches) {
