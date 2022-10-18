@@ -3,3 +3,10 @@
 output/**/
 /.htaccess
 /.idea
+output
+vendor
+/.phpunit.result.cache
+/phpunit.phar
+/composer.phar
+/composer.lock
+/composer.json
