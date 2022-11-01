@@ -438,7 +438,6 @@ abstract class FUPSBase {
 		}
 	}
 
-
 	protected function check_get_charset($html) {
 		if ($this->charset === null && preg_match('#\\<meta\\s+http-equiv\\s*=\\s*"Content-Type"\\s+content\\s*=\\s*"text/html;\\s+charset=([^"]+)">#', $html, $matches)) {
 			$this->charset = $matches[1];
@@ -471,7 +470,7 @@ abstract class FUPSBase {
 		return substr($class, 0, -4); # Omit trailing "FUPS"
 	}
 
-	public function do_send(&$redirect = false, $quit_on_error = true, &$err = false, $check_get_board_title = true) {
+	public function do_send(&$redirect = false, $quit_on_error = true, &$err = false, $check_get_board_title = false) {
 		static $retry_delays = array(0, 5, 5);
 		static $first_so_no_wait = true;
 

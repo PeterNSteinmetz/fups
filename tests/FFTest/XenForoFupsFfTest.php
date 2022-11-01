@@ -12,8 +12,8 @@ class XenForoFupsFfTest extends TestCase {
 
     public static function setUpBeforeClass(): void {
         $params = array(
-            'settings_filename' => 'settings.php',
-            'output_dirname'    => 'ffTestOutput',
+            'settings_filename' => __DIR__ . '/../../optionsFile_ffJim.txt',
+            'output_dirname'    => __DIR__ . '/../../ffTestOutput',
             'quiet'             => false,
         );
 
@@ -22,6 +22,10 @@ class XenForoFupsFfTest extends TestCase {
 
     public function testBasicConstruction(): void {
         $this->assertIsObject($this::$fups);
+    }
+
+    public function testRun(): void {
+        $this::$fups->run();
     }
 
 }
