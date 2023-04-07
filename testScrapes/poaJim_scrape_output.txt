@@ -1,0 +1,33 @@
+/usr/local/bin/php /Users/peter/FlyersForum/fups/fups.php -i optionsFile_poaJim.txt -o outputPoaJim
+file exists0s Reading settings.
+Invalid value for setting "delay": specified value "1" is less than the minimum, 5. Resetting this value to that minimum.
+0s Finished reading settings.
+0s Attempting to determine search ID.
+0s Scraping search page for posts starting from page #1.
+0s Scraping search page for posts starting from page #2.
+11s Retrieved 1 of 21 posts.
+11s Retrieved author for 1 of 3 threads.
+16s Retrieved 2 of 21 posts.
+16s Retrieved author for 2 of 3 threads.
+16s Now scraping contents of 21 posts.
+21s Retrieved 6 of 21 posts.
+27s Retrieved 11 of 21 posts.
+32s Retrieved 12 of 21 posts.
+38s Retrieved 19 of 21 posts.
+43s Retrieved 20 of 21 posts.
+49s Retrieved 21 of 21 posts.
+54s Retrieved author for 3 of 5 threads.
+59s Retrieved author for 4 of 5 threads.
+1m5s Retrieved author for 5 of 5 threads.
+1m5s Sorting posts and topics subsequent to scraping posts' contents.
+1m5s Finished sorting posts and topics.
+1m5s Downloading images and/or attachments.
+1m5s Downloading file from URL <https://www.pilotsofamerica.com/community/styles/default/xenforo/clear.png>.
+1m10s Replacing URLs in posts with local URLs for downloaded files.
+1m10s Writing output.
+PHP Warning:  Undefined array key "board_title" in /Users/peter/FlyersForum/fups/classes/CFUPSBase.php on line 794
+
+                                           Warning: Undefined array key "board_title" in /Users/peter/FlyersForum/fups/classes/CFUPSBase.php on line 794
+                                           1m10s DONE
+
+                                           Process finished with exit code 0
