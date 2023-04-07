@@ -1,0 +1,12 @@
+forum_type=XenForo
+base_url=https://flyersforum.org
+extract_user_id=jim-logajan.4687//
+extract_user=Jim Logajan
+start_from_date=2016-01-01 12:00
+php_timezone=Australia/Hobart
+thread_url_prefix=threads/
+download_images=0
+non_us_date_format=0
+debug=1
+delay=5
+

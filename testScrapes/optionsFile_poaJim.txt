@@ -1,0 +1,11 @@
+forum_type=XenForo
+base_url=https://www.pilotsofamerica.com/community
+extract_user_id=jim-logajan.4687
+extract_user=Jim Logajan
+php_timezone=Australia/Hobart
+thread_url_prefix=threads/
+download_images=1
+start_from_date=2018-01-01 12:00
+non_us_date_format=0
+debug=0
+delay=5
