@@ -1,0 +1,10 @@
+forum_type=XenForo
+base_url=https://www.pilotsofamerica.com/community
+extract_user_id=peternsteinmetz.26407
+extract_user=PeterNSteinmetz
+php_timezone=Australia/Hobart
+thread_url_prefix=threads/
+download_images=1
+non_us_date_format=0
+debug=0
+delay=1
