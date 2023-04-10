@@ -10,3 +10,4 @@ vendor
 /composer.phar
 /composer.lock
 /composer.json
+/testScrapes/outputFfJim*
