@@ -1,4 +1,4 @@
-forum_type=XenForo
+forum_type=Poa
 base_url=https://www.pilotsofamerica.com/community
 extract_user_id=jim-logajan.4687
 extract_user=Jim Logajan
