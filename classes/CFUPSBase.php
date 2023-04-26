@@ -470,7 +470,7 @@ abstract class FUPSBase {
 		return substr($class, 0, -4); # Omit trailing "FUPS"
 	}
 
-	public function do_send(&$redirect = false, $quit_on_error = true, &$err = false, $check_get_board_title = false) {
+	public function do_send(&$redirect = false, $quit_on_error = true, &$err = false, $check_get_board_title = true) {
 		static $retry_delays = array(0, 5, 5);
 		static $first_so_no_wait = true;
 
