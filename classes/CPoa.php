@@ -71,5 +71,39 @@ class PoaFUPS extends XenForoFUPS {
          }
     }
 
+    /**
+     * Return only json output as variant for this usage.
+     * @return array|array[]
+     *
+     * Copied from CFUPSBase version.
+     */
+    protected function get_output_variants() {
+        $user_posts_opvs = array(
+            array(
+                'filename_appendix' => '.json',
+                'method'            => 'write_output_json',
+                'description'       => 'JSON.',
+            ),
+        );
+        $forum_posts_opvs = array(
+            array(
+                'filename_appendix' => '.forum-posts.json',
+                'method'            => 'write_output_json_forums',
+                'description'       => 'JSON.',
+            ),
+        );
+
+        $final_arr = array();
+        if (!empty($this->settings['extract_user_id'])) {
+            $final_arr = array_merge($final_arr, $user_posts_opvs);
+        }
+        if (isset($this->settings['forum_ids_arr'])) {
+            $final_arr = array_merge($final_arr, $forum_posts_opvs);
+        }
+
+        return $final_arr;
+    }
+
+
 }
 ?>
